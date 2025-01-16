@@ -1,0 +1,29 @@
+###
+GET http://localhost:8090/api
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+
+
+
+###
+POST http://localhost:8090/api
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+
+{
+   "date":  "2025-01-07T13:20:00.000+00:00",
+   "title": "Id issue meeting",
+  "content":  "Private meeting"
+}
+
+
+###
+GET http://localhost:8090/api/public
+
+
+
+###
+GET http://localhost:8090/api/secure
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+
+
